@@ -1,0 +1,13 @@
+@import "base/variables";
+@import "base/breakpoints";
+@import "reset";
+
+@import "components/layout";
+@import "components/navbar/navbar";
+@import "components/header/header";
+@import "components/button/button";
+@import "components/menuItems/menuItems";
+
+body {
+  font-family: Inter, sans-serif;
+}
