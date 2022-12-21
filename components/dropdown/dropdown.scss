@@ -1,0 +1,38 @@
+.dropdown {
+  position: relative;
+  display: inline;
+
+  &__menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 5px;
+    border-radius: $m-s;
+    background-color: $color-white-100;
+    filter: drop-shadow(2px 2px 3px $color-silver-50);
+  }
+
+  &__menu-item {
+    min-width: $m-2xl;
+    white-space: nowrap;
+    padding: 10px 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-silver-50;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-silver;
+    }
+  }
+
+  &__button-icon {
+    margin: 0 5px;
+    transition: rotate .4s  ease;
+    
+    &--active {
+      rotate: 180deg;
+    }
+  }
+}

@@ -1,11 +1,12 @@
 import { Button } from "../button";
+import { Dropdown } from "../dropdown";
 
 function MenuItems() {
   return (
     <div>
       <Button variant="ghost">Home</Button>
-      <Button variant="ghost">Products</Button>
-      <Button variant="ghost">Resources</Button>
+      <Dropdown variant="ghost">Products</Dropdown>
+      <Dropdown variant="ghost">Resources</Dropdown>
       <Button variant="ghost">Pricing</Button>
     </div>
   );

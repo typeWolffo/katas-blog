@@ -4,6 +4,8 @@
   padding: $m-sm $m-base;
   font-weight: bold;
   color: $color-bglight;
+  display: inline-flex;
+  align-items: center;
 
   &--contained {
     background-color: $color-bglight;

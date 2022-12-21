@@ -8,6 +8,7 @@ $font-size-h1:                    $font-size-h2 * 1.25;
 $font-size-big-paragraph:         18px;
 
   //----- spacings (margins/paddings) ------------------------------------------------------------------------------------
+$m-s:                             5px;
 $m-xs:                            8px;
 $m-sm:                            $m-xs * 2;
 $m-base:                          $m-xs * 3;
@@ -38,21 +39,19 @@ $grid-gutter-width:               $m-base;
 $container:                       map-get($grid-breakpoints, xl);
 
   //----- colors ---------------------------------------------------------------------------------------------------------
-$color-primary:                   #32A89C;
-$color-primary-dark:              #00635A;
 $color-white:                     #fffefce0;
+$color-white-100:                 #fffefc;
 $color-white-text:                #ffffffcc;
 $color-white-label:               #ffffffa3;
 $color-background:                #121212;
+$color-dark:                      #282828;
 $color-bglight:                   #202020;
 $color-white26:                   #ffffff42;
 $color-white5:                   #FFFFFF0A;
-$color-switch:                    #7643A8;
 $color-white10:                   #FFFFFF1A;
 $color-tomato:                    #c99284;
-$color-purple:                    #7643A8;
-$color-purple-dark:               #53297c;
 $color-silver:                    #c9c9c9;
+$color-silver-50:                 #c9c9c980;
 $color-silver-dark:               #8a8a8a;
 $color-red:                       #fc6969;
 $color-red-dark:                  #a54343;

@@ -1,16 +1,20 @@
 import classnames from "classnames";
 import { PropsWithChildren } from "react";
 
-type Props = {
+export type ButtonProps = {
   variant: "ghost" | "contained";
+  onClick?: () => void;
 };
 
-function Button(props: PropsWithChildren<Props>) {
-  const { variant, children } = props;
+function Button(props: PropsWithChildren<ButtonProps>) {
+  const { variant, children, onClick } = props;
 
   return (
     <button
-      className={classnames("button", { [`button--${variant}`]: variant })}
+      className={classnames("button", {
+        [`button--${variant}`]: variant,
+      })}
+      onClick={onClick}
     >
       {children}
     </button>
