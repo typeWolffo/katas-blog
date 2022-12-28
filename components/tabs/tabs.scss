@@ -1,0 +1,41 @@
+$border-size: 2px;
+
+.tabs {
+  display: flex;
+  border-bottom: $border-size solid $color-dark-50;
+  padding: $m-sm 0;
+  margin-bottom: $m-xl;
+
+  &__tab-item {
+    position: relative;
+    color: $color-dark-50;
+    font-weight: $font-weight-600;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: $m-base;
+    }
+
+    &:hover {
+      color: $color-dark;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: calc(#{-$m-sm} - #{$border-size});
+      left: 0;
+      height: 3px;
+      width: 0;
+      background-color: $color-dark;
+      transition: width $transition-duration $transition-function;
+    }
+
+    &--active {
+    color: $color-dark;
+      &::before {
+        width: 100%;
+      }
+    }
+  }
+}

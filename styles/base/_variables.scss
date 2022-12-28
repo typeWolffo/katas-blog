@@ -10,6 +10,7 @@ $font-size-big-paragraph:         18px;
   //----- spacings (margins/paddings) ------------------------------------------------------------------------------------
 $m-s:                             5px;
 $m-xs:                            8px;
+$m-xxs:                           10px;
 $m-sm:                            $m-xs * 2;
 $m-base:                          $m-xs * 3;
 $m-lg:                            $m-base * 2;
@@ -26,9 +27,11 @@ $line-height-lg:                  $m-lg;
 $text-area-height:                200px;
 
   //----- border radiuses ------------------------------------------------------------------------------------------------
+$border-radius-s:                 $m-s;
 $border-radius-base:              $m-base;
 $border-radius-sm:                $m-xs;
 $border-radius-lg:                $m-lg;
+$border-radius-xl:                $m-xl;
 
   //----- breakpoints ----------------------------------------------------------------------------------------------------
 $grid-breakpoints:                (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
@@ -37,6 +40,7 @@ $grid-columns:                    12;
 $grid-gutter-width:               $m-base;
 
 $container:                       map-get($grid-breakpoints, xl);
+$post:                            map-get($grid-breakpoints, sm);
 
   //----- colors ---------------------------------------------------------------------------------------------------------
 $color-white:                     #fffefce0;
@@ -45,10 +49,12 @@ $color-white-text:                #ffffffcc;
 $color-white-label:               #ffffffa3;
 $color-background:                #121212;
 $color-dark:                      #282828;
+$color-dark-50:                   #28282880;
 $color-bglight:                   #202020;
-$color-white26:                   #ffffff42;
-$color-white5:                   #FFFFFF0A;
-$color-white10:                   #FFFFFF1A;
+$color-white-45:                  #E1E1E172;
+$color-white-26:                  #ffffff42;
+$color-white-5:                   #FFFFFF0A;
+$color-white-10:                  #FFFFFF1A;
 $color-tomato:                    #c99284;
 $color-silver:                    #c9c9c9;
 $color-silver-50:                 #c9c9c980;
@@ -74,7 +80,7 @@ $font-weight-bold:                700;
 $icon-size:                       $m-base;
 
   //----- transitions ----------------------------------------------------------------------------------------------------
-$transition-duration:             .3s;
+$transition-duration:             .4s;
 $transition-function:              ease-in-out;
 
   //----- z-indexes ------------------------------------------------------------------------------------------------------
@@ -87,6 +93,13 @@ $z-higher:                        70;
 
 
 $dark-background: #343434 0% 0% no-repeat padding-box;
-$font-family: Poppins;
+$font-family: Inter, sans-serif;
 $font-family-code-markdown: Consolas, Monaco, "Andale Mono", monospace;
 $font-family-default: sans-serif;
+
+@mixin backdrop-blur {
+  background-color: $color-white-45;
+  backdrop-filter: blur( $m-xxs );
+  -webkit-backdrop-filter: blur( $m-xxs );
+  border: 1px solid rgba( 255, 255, 255, 0.5 );
+}

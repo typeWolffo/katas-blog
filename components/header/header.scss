@@ -1,6 +1,7 @@
 .header {
   height: $m-xl;
   background-color: $color-white;
+  backdrop-filter: blur( $m-xxs );
   position: fixed;
   top: 0;
   left: 0;

@@ -8,7 +8,12 @@
 @import "components/button/button";
 @import "components/menuItems/menuItems";
 @import "components/dropdown/dropdown";
+@import "components/input/input";
+@import "components/hero/hero";
+@import "components/tabs/tabs";
+@import "components/blog/blog";
+@import "components/blogPost/blogPost";
 
 body {
-  font-family: Inter, sans-serif;
+  font-family: $font-family;
 }

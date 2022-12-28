@@ -1,0 +1,12 @@
+.input {
+  border: 1px solid $color-dark-50;
+  width: fit-content;
+  border-radius: $border-radius-xl;
+
+  &__text-field {
+    height: 100%;
+    margin-inline: $m-sm;
+    font-weight: $font-weight-600;
+    border: none;
+  }
+}

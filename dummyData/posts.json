@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "author": "Olivia Rhye",
+      "title": "UX review presentations",
+      "description": "How do you create compelling presentations that wow your colleagues and impress your managers? Look no further.",
+      "imageUrl": "https://picsum.photos/500/300",
+      "category": "design",
+      "createdAt": "2022-01-20T10:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "author": "Olivia Rhye",
+      "title": "Best books on scaling your startup",
+      "description": "This collection of the best startup books for scaling your startup are packed full with valuable insights and advice.",
+      "imageUrl": "https://picsum.photos/500/300",
+      "category": "management",
+      "createdAt": "2022-01-19T10:00:00.000Z"
+    },
+    {
+      "id": "3",
+      "author": "Olivia Rhye",
+      "title": "Building your API stack",
+      "description": "The rise of RESTful APIs has been met by rise in tools for creating, testing and managing. Here's our best practices.",
+      "imageUrl": "https://picsum.photos/500/300",
+      "category": "development",
+      "createdAt": "2022-01-18T10:00:00.000Z"
+    },
+    {
+      "id": "4",
+      "author": "Olivia Rhye",
+      "title": "Bill Walsh leadership lessons",
+      "description": "Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning dynasty? Dive deep into leadership",
+      "imageUrl": "https://picsum.photos/500/300",
+      "category": "leadership",
+      "createdAt": "2022-01-17T10:00:00.000Z"
+    }
+  ]
+}

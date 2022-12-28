@@ -1,0 +1,28 @@
+.hero {
+  width: 100%;
+  padding: $m-xl 0;
+
+  &__header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &-heading {
+      font-size: $font-size-h1;
+      font-weight: $font-weight-bold;
+      text-transform: capitalize;
+      color: $color-bglight;
+      flex-basis: 66.66%;
+    }
+
+    &-body {
+      color: $color-silver-dark;
+      flex: 1 1 auto;
+      flex-basis: 33.33%;
+      font-size: $font-size-h4;
+      font-weight: $font-weight-500;
+      min-width: 400px;
+      padding: $m-lg 0;
+    }
+  }
+}
